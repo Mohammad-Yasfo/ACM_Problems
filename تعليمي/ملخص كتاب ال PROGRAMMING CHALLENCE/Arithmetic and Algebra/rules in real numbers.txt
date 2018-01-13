@@ -1,0 +1,2 @@
+(a + b) + c = a + (b + c)
+round(X, k) = floor(10kX + (1/2))/10k

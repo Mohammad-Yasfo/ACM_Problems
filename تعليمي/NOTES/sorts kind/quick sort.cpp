@@ -1,0 +1,38 @@
+/*
+Quicksort — This algorithm reduces the job of sorting one big array into the job
+of sorting two smaller arrays by performing a partition step. The partition separates
+the array into those elements that are less than the pivot/divider element,
+and those which are strictly greater than this pivot/divider element. Because no
+element need ever move out of its region after the partition, each subarray can be
+sorted independently. To facilitate sorting subarrays, the arguments to quicksort
+include the indices of the first (l) and last (h) elements in the subarray.
+Quicksort is interesting for several reasons. When implemented properly, it is
+the fastest in-memory sorting algorithm. It is a beautiful example of the power of
+recursion. The partition algorithm is useful for many tasks in its own right. For
+example, how might you separate an array containing just 0’s and 1’s into one
+run of each symbol?
+*/
+int _partitions(int s[], int l, int h)
+{
+int i; /* counter */
+int p; /* pivot element index */
+int firsthigh; /* divider position for pivot */
+p = h;
+firsthigh = l;
+for (i=l; i<h; i++)
+if (s[i] < s[p]) {
+swap(s[i],s[firsthigh]);
+firsthigh ++;
+}
+swap(s[p],s[firsthigh]);
+return(firsthigh);
+}
+void quicksort(int s[], int l, int h)
+{
+int p; /* index of partition */
+if ((h-l)>0) {
+p = _partitions(s,l,h);
+quicksort(s,l,p-1);
+quicksort(s,p+1,h);
+}
+}

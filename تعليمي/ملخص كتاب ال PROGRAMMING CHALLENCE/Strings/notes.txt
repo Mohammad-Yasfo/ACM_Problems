@@ -1,0 +1,2 @@
+1-bruteforce
+2-kmp

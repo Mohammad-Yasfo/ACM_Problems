@@ -1,0 +1,36 @@
+Write the Comments First — Start your programs and procedures by writing a
+few sentences explaining what they are supposed to do. This is important because
+if you can’t easily write these comments, you probably don’t really understand
+what the program does. We find it much easier to debug our comments than our
+programs, and believe the additional typing is time very well spent. Of course,
+with the time pressure of a contest comes a tendency to get sloppy, but do so at
+your own risk.
+
+• Document Each Variable — Write a one-line comment for each variable when
+you declare it so you know what it does. Again, if you can’t describe it easily, you
+don’t know why it is there. You will likely be living with the program for at least
+a few debug cycles, and this is a modest investment in readability which you will
+come to appreciate.
+
+• Use Symbolic Constants— Whenever you have a constant in your program (input
+size, mathematical constant, data structure size, etc.) declare it to be so at the
+top of your program. Horribly insidious errors can result from using inconsistent
+constants in a program. Of course, the symbolic name helps only if you actually
+use it in your program whenever you need the constant. . .
+
+• Use Enumerated Types for a Reason— Enumerated types (i.e., symbolic variables
+such Booleans (true,false)) can be terrific aids to understanding. However, they
+are often unnecessary in short programs. Note this example representing the suit
+(club, diamond, heart, spade) of a deck of cards.
+
+•Use Subroutines To Avoid Redundant Code — Read the following program fragment
+managing the state of a rectangular board, and think how you might shorten
+and simplify it.
+
+•Make Your Debugging Statements Meaningful — Learn to use the debugging
+environment on your system. This will enable you to stop execution at a given
+statement or condition, so you can see what the values of all associated variables
+are. This is usually faster and easier than typing in a bunch of print statements.
+But if you are going to insert debugging print statements, make them say something.
+Print out all relevant variables, and label the printed quantity with the
+variable name. Otherwise it is easy to get lost in your own debugging output.

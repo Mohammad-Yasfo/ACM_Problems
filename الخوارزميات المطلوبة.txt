@@ -1,0 +1,34 @@
+dp ---
+datastructers----
+swip lines----
+kmp 
+game theory ----
+geomentry--------------------------------
+permutation ----
+network flow ---
+preffix tree
+heavy light  decomposition ------
+combinatories-----
+sieve prime numbers
+
+
+
+lower bound 
+next permutation
+
+LCS
+BITMASK
+DYNAMIC SEGMENT TREE
+SEGMENT TREE مع ضغط الأرقام
+BICONNECTED GRAPH
+BRIDGE
+
+//EDIT DISTANCE
+KMP
+GEOMENTRY
+
+
+مسألة الشجرة و عدد المسارات التي بطول k
+مسألة MPILOT
+
+

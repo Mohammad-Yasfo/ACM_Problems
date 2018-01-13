@@ -1,0 +1,69 @@
+DATA STRUCTURES
+    1-TREES
+      1-1 BINARY TREE
+         1-1-1 SEGMENT TREE
+         1-1-2 AVL TREE
+      1-2 DAG
+         1-2-1 TOPOGICAL SEARCH ON DAG WITH DP
+      1-3 PREFIX TREE
+      1-4 SUFFIX TREE
+    2-VECTORS
+    3-STACKS
+    4-QUEUES
+    5-DICTIONARYS
+    6-PERIOTY QUEUE
+    7-SETS
+------------------------------------------------------------------------------
+SORTING
+  1-BUBBLE SORT
+  2-QUICK SORT
+  3-INSERTION SORT
+  4-SELECTION SORT
+SORTING APPLICATION
+----------------------------------------
+NUMBER THEORY
+   1-MODULO
+      1-1 GCD
+   2-PRIME NUMBERS
+-----------------------------------------
+ALGEBRA
+   1-BIGNUMS
+   2-CONVERT BASES
+   3-LOGARITHMS
+-----------------------------------------
+GRAPH TRAVERSAL
+   1-DATA STRUCTURES FOR GRAPH
+   2-DFS
+     2-1 FINDING CYCLES
+     2-2 CONNECTED COMPONENTS
+   3-BFS
+     3-1 FINDING PATHS
+   4- TOPOGICAL SEARCH
+--------------------------------------------------
+GRAPH ALGORITHMS
+1- GRAPH THEORY
+2- DIJIKSTRA
+3- KRUSKAL WITH DSU
+3- PRIM WITH SEGMENT TREE
+4- NETWORK FLOW
+5-BELLMAN
+---------------------------------------------------------
+GEOMENTRY
+1-  LINES
+2-  RECTANGLES
+3-  TRIANGLES
+-----------------------------------------------------------------
+BINARY SEARCH
+1-SIMPLE BINARY SEARCH
+2-BINARY SEARCH ON ANSWER
+---------------------------------------------------------
+ANOTHER ALGORITHMS
+1- PARTIAL SUM
+2- DSU
+3- TWO POINTERS
+4- BACKTRACKING
+5- RECUCSIVE
+6-KMP
+7-PERMUTATION
+8-SWIP LINES
+9-MEET IN MIDDLE

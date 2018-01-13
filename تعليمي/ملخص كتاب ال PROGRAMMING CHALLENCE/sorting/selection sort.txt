@@ -1,0 +1,20 @@
+Selection Sort — This algorithm splits the input array into sorted and unsorted
+parts, and with each iteration finds the smallest element remaining in the unsorted
+region and moves it to the end of the sorted region:
+selection_sort(int s[], int n)
+{
+int i,j; /* counters */
+int min; /* index of minimum */
+for (i=0; i<n; i++) {
+min=i;
+for (j=i+1; j<n; j++)
+if (s[j] < s[min]) min=j;
+swap(&s[i],&s[min]);
+}
+}
+Selection sort makes a lot of comparisons, but is quite efficient if all we count
+are the number of data moves. Only n−1 swaps are performed by the algorithm,
+which is necessary in the worst case; think about sorting a reversed permutation.
+It also provides an example of the power of advanced data structures. Using an
+efficient priority queue to maintain the unsorted portion of the array suddenly
+turns O(n2) selection sort into O(n lg n) heapsort!

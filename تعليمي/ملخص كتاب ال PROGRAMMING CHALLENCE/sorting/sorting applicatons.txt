@@ -1,0 +1,39 @@
+• Uniqueness Testing — How can we test if the elements of a given collection of
+items S are all distinct? Sort them into either increasing or decreasing order so
+that any repeated items will fall next to each other. One pass through the elements
+testing if S[i] = S[i + 1] for any 1 ≤ i < n then finishes the job.
+• Deleting Duplicates — How can we remove all but one copy of any repeated
+elements in S? Sort and sweep again does the job. Note that the sweeping is
+best done by maintaining two indices — back, pointing to the last element in the
+cleaned-out prefix array, and i, pointing to the next element to be considered. If
+S[back] <> S[i], increment back and copy S[i] to S[back].
+• Prioritizing Events — Suppose we are given a set of jobs to do, each with its
+own deadline. Sorting the items according to the deadline date (or some related
+criteria) puts the jobs in the right order to process them. Priority queue data
+structures are useful for maintaining calendars or schedules when there are insertions
+and deletions, but sorting does the job if the set of events does not change
+during execution.
+• Median/Selection — Suppose we want to find the kth largest item in set S.
+After sorting the items in increasing order, this fellow sits in location S[k]. This
+approach can be used to find (in a slightly inefficient manner) the smallest, largest,
+and median elements as special cases.
+• Frequency Counting — Which is the most frequently occurring element in S, i.e.,
+the mode? After sorting, a linear sweep lets us count the number of times each
+element occurs.
+• Reconstructing the Original Order— How can we restore the original arrangement
+of a set of items after we permute them for some application? Add an extra field
+to the data record for the item, such that the ith record sets this field to i. Carry
+this field along whenever you move the record, and later sort on it when you want
+the initial order back.
+• Set Intersection/Union — How can we intersect or union the elements of two
+containers? If both of them have been sorted, we can merge them by repeatedly
+taking the smaller of the two head elements, placing them into the new set if
+desired, and then deleting the head from the appropriate list.
+• Finding a Target Pair — How can we test whether there are two integers x, y ∈ S
+such that x + y = z for some target z? Instead of testing all possible pairs, sort
+the numbers in increasing order and sweep. As S[i] increases with i, its possible
+partner j such that S[j] = z − S[i] decreases. Thus decreasing j appropriately as
+i increases gives a nice solution.
+• Efficient Searching — How can we efficiently test whether element s is in set S?
+Sure, ordering a set so as to permit efficient binary search queries is perhaps the
+most common application of sorting. Just don’t forget all the others!

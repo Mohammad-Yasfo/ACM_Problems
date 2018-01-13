@@ -1,0 +1,28 @@
+#include <ctype.h> /* include the character library */
+int isalpha(int c); /* true if c is either upper or lower case */
+int isupper(int c); /* true if c is upper case */
+int islower(int c); /* true if c is lower case */
+int isdigit(int c); /* true if c is a numerical digit (0-9) */
+int ispunct(int c); /* true if c is a punctuation symbol */
+int isxdigit(int c); /* true if c is a hexadecimal digit (0-9,A-F) */
+int isprint(int c); /* true if c is any printable character */
+int toupper(int c); /* convert c to upper case -- no error checking */
+int tolower(int c); /* convert c to lower case -- no error checking */
+#include <string.h> /* include the string library */
+char *strcat(char *dst, const char *src); /* concatenation */
+int strcmp(const char *s1, const char *s2); /* is s1 == s2? */
+char *strcpy(char *dst, const char *src); /* copy src to dist */
+size_t strlen(const char *s); /* length of string */
+char *strstr(const char *s1, const char *s2); /* search for s2 in s1 */
+char *strtok(char *s1, const char *s2); /* iterate words in s1 */
+string::size() /* string length */
+string::empty() /* is it empty */
+string::c_str() /* return a pointer to a C style string */
+string::operator [](size_type i) /* access the ith character */
+string::append(s) /* append to string */
+string::erase(n,m) /* delete a run of characters */
+string::insert(size_type n, const string&s) /* insert string s at n */
+string::find(s)
+string::rfind(s) /* search left or right for the given string */
+string::first()
+string::last() /* get characters, also there are iterators */

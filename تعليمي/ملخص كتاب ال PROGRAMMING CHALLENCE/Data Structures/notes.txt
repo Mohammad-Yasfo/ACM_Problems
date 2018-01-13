@@ -1,0 +1,53 @@
+بنى المعطيات الخطية
+1-Stacks
+Stacks and queues are containers where items are retrieved according to the order of
+insertion, independent of content. Stacks maintain last-in, first-out order. The abstract
+operations on a stack include –
+• Push(x,s) — Insert item x at the top of stack s.
+• Pop(s) — Return (and remove) the top item of stack s.
+• Initialize(s) — Create an empty stack.
+• Full(s), Empty(s) — Test whether the stack can accept more pushes or pops,
+respectively.
+
+2-Queues
+Queues maintain first-in, first-out order. This appears fairer than last-in, first-out, which
+is why lines at stores are organized as queues instead of stacks. Decks of playing cards
+can be modeled by queues, since we deal the cards off the top of the deck and add them
+back in at the bottom. FIFO queues will be used in implementing breadth-first search
+in graphs in Chapter 9.
+The abstract operations on a queue include —
+• Enqueue(x,q) — Insert item x at the back of queue q.
+• Dequeue(q) — Return (and remove) the front item from queue q
+• Initialize(q), Full(q), Empty(q) — Analogous to these operation on stacks.
+
+3-Dictionaries
+Dictionaries permit content-based retrieval, unlike the position-based retrieval of stacks
+and queues. They support three primary operations –
+• Insert(x,d) — Insert item x into dictionary d.
+• Delete(x,d) — Remove item x (or the item pointed to by x) from dictionary d.
+• Search(k,d) — Return an item with key k if one exists in dictionary d.
+
+4-Priority Queues
+Priority queues are data structures on sets of items supporting three operations –
+• Insert(x,p) — Insert item x into priority queue p.
+• Maximum(p) — Return the item with the largest key in priority queue p.
+• ExtractMax(p) — Return and remove the item with the largest key in p.
+
+
+5-2.1.5 Sets
+Sets (or more strictly speaking subsets) are unordered collections of elements drawn
+from a given universal set U. Set data structures get distinguished from dictionaries
+because there is at least an implicit need to encode which elements from U are not in
+the given subset.
+The basic operations on subsets are —
+• Member(x,S) — Is an item x an element of subset S?
+• Union(A,B) — Construct subset A ∪ B of all elements in subset A or in subset
+B.
+• Intersection(A,B) — Construct subset A ∩ B of all elements in subset A and in
+subset B.
+• Insert(x,S), Delete(x,S) — Insert/delete element x into/from subset S.
+
+بنى المعطيات الشجرية
+1-trees
+2-binary trees
+3-segment trees
